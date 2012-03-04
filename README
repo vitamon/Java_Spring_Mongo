@@ -12,5 +12,5 @@ To get summary of saved data for your APP_ID:
 http://just-save-it.appspot.com/stat?APP_ID=MY
 
 TODO:
-1. add soap endpoint get statistics in xml
+1. add soap endpoint to get statistics in xml
 2. add amf endpoint for statistcs
