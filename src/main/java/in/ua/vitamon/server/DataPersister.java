@@ -1,11 +1,12 @@
 package in.ua.vitamon.server;
 
-import javax.jdo.Query;
 import in.ua.vitamon.model.DataEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.jdo.PersistenceManager;
+import javax.jdo.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class DataPersister {
@@ -70,9 +71,7 @@ public class DataPersister {
         Query query = pm.newQuery(DataEntity.class);
         query.declareParameters("String applicationId");
         query.setFilter(filter.toString());
-
-        //query.setRange(indexOffset, indexOffset + ENTITIES_PER_PAGE + 1);
         return (List<DataEntity>) query.execute(appId);
-    }
+      }
 
 }
