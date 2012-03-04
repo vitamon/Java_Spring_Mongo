@@ -17,7 +17,7 @@ import java.util.Collection;
  * @author: vit.tam@gmail.com
  */
 public class AdminPanelServlet extends HttpServlet {
-    private static final Logger log = LoggerFactory.getLogger(IndexServlet.class);
+    private static final Logger log = LoggerFactory.getLogger(AdminPanelServlet.class);
 
     private DataPersister dataPersister = new DataPersister();
 
@@ -25,12 +25,12 @@ public class AdminPanelServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
 
-        log.debug("doGet");
+        log.debug("doGet in Admin");
         // get
         Collection<DataEntity> entries = dataPersister.getAll();
         request.setAttribute("messages", entries);
 
-        forward(request, response, "index.jsp");
+       // forward(request, response, "index.jsp");
     }
 
     /**

@@ -34,7 +34,7 @@
 		</dependency>
 
 		<!--
-			J2EE Servlet API. We need it to compile IndexServlet class. You can
+			J2EE Servlet API. We need it to compile SaveDataServlet class. You can
 			probably remove it, if you don't explicitly use Servlets
 		-->
 		<dependency>

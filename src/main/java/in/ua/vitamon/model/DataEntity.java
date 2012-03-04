@@ -2,10 +2,7 @@ package in.ua.vitamon.model;
 
 import javax.jdo.annotations.*;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @PersistenceCapable(identityType = IdentityType.APPLICATION)
 public class DataEntity implements Serializable {
@@ -24,7 +21,7 @@ public class DataEntity implements Serializable {
         this.dateCreated = new Date();
     }
 
-    public DataEntity(String appId, List<String> params) {
+    public DataEntity(String appId, List<ParamEntry> params) {
         this(appId);
         this.params = params;
     }
@@ -39,7 +36,7 @@ public class DataEntity implements Serializable {
     private Date dateCreated;
 
     @Persistent
-    private List<String> params;
+    private List<ParamEntry> params;
 
     /**
      * Creates entry from map of parameters
@@ -48,13 +45,29 @@ public class DataEntity implements Serializable {
      * @return null -- if parsing failed
      */
 
-    public static DataEntity parseEntry(Map<String, String> params) {
-        if (!params.containsKey(ParamIDs.APP_ID)) return null;
-
-        DataEntity dataEntity = new DataEntity(params.get(ParamIDs.APP_ID));
-        params.remove(ParamIDs.APP_ID);
-        dataEntity.setParams(new ArrayList(params.values()));
+    public static DataEntity parseEntry(final Map<String, String[]> params) {
+        Map<String, String> flatParams = toFlatMap(params);
+        
+        if (!flatParams.containsKey(ParamIDs.APP_ID)) return null;
+        // set app_id
+        DataEntity dataEntity = new DataEntity(params.get(ParamIDs.APP_ID)[0]);
+        
+        flatParams.remove(ParamIDs.APP_ID);
+        dataEntity.setParams(ParamEntry.toArrayList(flatParams));
         return dataEntity;
+    }
+
+    /**
+     * Converts Map<String, String[]> --> Map<String, String[0]>
+     * @param params
+     * @return
+     */
+    public static Map<String, String> toFlatMap(final Map<String, String[]> params) {
+        Map<String, String> uniqueParams = new HashMap<String, String>();
+        for (String key:params.keySet()) {
+            uniqueParams.put(key, params.get(key)[0]);
+        }
+        return uniqueParams;
     }
 
     /*
@@ -86,12 +99,21 @@ public class DataEntity implements Serializable {
         this.dateCreated = dateCreated;
     }
 
-    public List<String> getParams() {
+    public List<ParamEntry> getParams() {
         return params;
     }
 
-    public void setParams(List<String> params) {
+    public void setParams(List<ParamEntry> params) {
         this.params = params;
     }
 
+    @Override
+    public String toString() {
+        return "DataEntity{" +
+                "id=" + id +
+                ", appId='" + appId + '\'' +
+                ", dateCreated=" + dateCreated +
+                ", params=" + params +
+                '}';
+    }
 }
