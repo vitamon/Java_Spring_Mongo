@@ -4,30 +4,12 @@ import in.ua.vitamon.model.DataEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.jdo.*;
-import java.util.ArrayList;
-import java.util.Collection;
+import javax.jdo.PersistenceManager;
+import javax.jdo.Query;
 import java.util.List;
 
 public class DataPersister {
     private static final Logger log = LoggerFactory.getLogger(DataPersister.class);
-
-
-/*    public Collection<DataEntity> getAll() {
-        PersistenceManager pm = pmfInstance.getPersistenceManager();
-        try {
-            List<DataEntity> messages = new ArrayList<DataEntity>();
-            Extent<DataEntity> extent = pm.getExtent(DataEntity.class, false);
-            for (DataEntity message : extent) {
-                messages.add(message);
-            }
-            extent.closeAll();
-
-            return messages;
-        } finally {
-            pm.close();
-        }
-    }*/
 
     public void create(DataEntity dto) {
         PersistenceManager pm = PMF.get().getPersistenceManager();
@@ -38,22 +20,6 @@ public class DataPersister {
             pm.close();
         }
     }
-
-/*    public Collection<DataEntity> findAllMatches(DataEntity dto) {
-        PersistenceManager pm = pmfInstance.getPersistenceManager();
-        try {
-            List<DataEntity> items = new ArrayList<DataEntity>();
-            Extent<DataEntity> extent = pm.getExtent(DataEntity.class, false);
-            for (DataEntity message : extent) {
-                items.add(message);
-            }
-            extent.closeAll();
-
-            return items;
-        } finally {
-            pm.close();
-        }
-    }*/
 
     public void deleteById(Long id) {
         PersistenceManager pm = PMF.get().getPersistenceManager();
@@ -72,6 +38,6 @@ public class DataPersister {
         query.declareParameters("String applicationId");
         query.setFilter(filter.toString());
         return (List<DataEntity>) query.execute(appId);
-      }
+    }
 
 }
