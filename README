@@ -4,6 +4,13 @@ Usage:
 
 http://just-save-it.appspot.com/save?APP_ID=MY&name=vasia&surname=petrov 
 
+returns statusCode = 202 if OK
+returns statusCode = 400 if no APP_ID provided
+
 To get summary of saved data for your APP_ID: 
 
 http://just-save-it.appspot.com/stat?APP_ID=MY
+
+TODO:
+1. add soap endpoint get statistics in xml
+2. add amf endpoint for statistcs
