@@ -60,8 +60,8 @@ public class DataEntity implements Serializable {
 
     /**
      * Converts Map<String, String[]> --> Map<String, String[0]>
-     * @param params
-     * @return
+     * @param params Parameters from HTTP request
+     * @return uniqueParams
      */
     public static Map<String, String> toFlatMap(final Map<String, String[]> params) {
         Map<String, String> uniqueParams = new HashMap<String, String>();

@@ -33,7 +33,7 @@ public class SaveDataServlet extends HttpServlet {
         log.debug("doPost");
         DataEntity d = DataEntity.parseEntry(request.getParameterMap());
         if (d != null) {
-            saveEntry(d);
+            dataPersister.create(d);
             response.setStatus(HttpServletResponse.SC_ACCEPTED);
         } else {
             log.info("wrong or no data in request: " + request.getQueryString());
@@ -42,6 +42,6 @@ public class SaveDataServlet extends HttpServlet {
     }
 
     protected void saveEntry(DataEntity data) {
-        dataPersister.create(data);
+
     }
 }

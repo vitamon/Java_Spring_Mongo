@@ -2,27 +2,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Welcome</title>
+    <title>Just Statistics</title>
 </head>
 <body>
-  <p>
-  Welcome to Google App Engine for Java!
-  </p>
-  <p>
-  <ul>
-    <c:forEach var="message" items="${messages}">
-      <li>
-        <div><c:out value="${message.text}"/></div>
-        <div><a href="index?id=<c:out value="${message.id}"/>">Delete</a></div>
-      </li>
+<p>
+    Entries matching your application ID:
+</p>
+
+<p>
+<ul>
+    <c:forEach var="entry" items="${entries}">
+        <li>
+            <div><c:out value="${entry}"/></div>
+        </li>
     </c:forEach>
-  </ul>
-  </p>
-  <p>
-    <form action="index" method="post">
-        <input type="text" name="text" />
-        <input type="submit" value="Create" />
-    </form>
-  </p>
+</ul>
 </body>
 </html>

@@ -12,12 +12,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * @author: vit.tam@gmail.com
  */
-public class AdminPanelServlet extends HttpServlet {
-    private static final Logger log = LoggerFactory.getLogger(AdminPanelServlet.class);
+public class StatServlet extends HttpServlet {
+    private static final Logger log = LoggerFactory.getLogger(StatServlet.class);
 
     private DataPersister dataPersister = new DataPersister();
 
@@ -25,12 +26,18 @@ public class AdminPanelServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
 
-        log.debug("doGet in Admin");
-        // get
-        Collection<DataEntity> entries = dataPersister.getAll();
-        request.setAttribute("messages", entries);
+        log.debug("doGet");
+        DataEntity d = DataEntity.parseEntry(request.getParameterMap());
+        if (d != null) {
+            Collection<DataEntity> entries = dataPersister.findAllMatches(d.getAppId());
+            log.debug("found "+entries.size()+" entries: "+entries.toString());
+            request.setAttribute("entries", entries);
+            forward(request, response, "index.jsp");
+        } else {
+            log.info("wrong or no data in request: " + request.getQueryString());
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+        }
 
-       // forward(request, response, "index.jsp");
     }
 
     /**
