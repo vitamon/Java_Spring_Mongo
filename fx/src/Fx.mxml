@@ -11,7 +11,7 @@
         }
 
         private function myApp_faultHandler(event:FaultEvent):void {
-            Alert.show('Fault :' + event.message.toString())
+            Alert.show('Fault :' + event.statusCode)
         }
 
         private function button1_clickHandler(event:MouseEvent):void {
