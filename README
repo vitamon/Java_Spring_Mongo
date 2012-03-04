@@ -1,1 +1,9 @@
-This file was created by IntelliJ IDEA 11.0.2 for binding GitHub repository
+This app saves data from parameters of POST request 
+
+Usage: 
+
+http://just-save-it.appspot.com/save?APP_ID=MY&name=vasia&surname=petrov 
+
+To get summary of saved data for your APP_ID: 
+
+http://just-save-it.appspot.com/stat?APP_ID=MY
