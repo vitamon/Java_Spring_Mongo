@@ -1,12 +1,11 @@
 package in.ua.vitamon.model;
 
-import javax.jdo.annotations.IdGeneratorStrategy;
-import javax.jdo.annotations.Persistent;
-import javax.jdo.annotations.PrimaryKey;
+import javax.jdo.annotations.*;
 
 /**
  * @author: vit.tam@gmail.com
  */
+@PersistenceCapable(identityType = IdentityType.APPLICATION)
 public class RegisteredApplication {
     private static final long serialVersionUID = 1L;
 

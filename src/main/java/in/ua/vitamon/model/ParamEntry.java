@@ -1,6 +1,9 @@
 package in.ua.vitamon.model;
 
+import com.google.appengine.api.datastore.Key;
+
 import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 import java.io.Serializable;
@@ -12,18 +15,21 @@ import java.util.Map;
  * @author: vit.tam@gmail.com
  */
 
+@PersistenceCapable
 public class ParamEntry implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @PrimaryKey
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-    private Long id;
+    private Key id;
 
-    @Persistent private String key;
-    @Persistent private String value;
+    @Persistent
+    private String key;
+    @Persistent
+    private String value;
 
-    public ParamEntry(){
+    public ParamEntry() {
     }
 
     public ParamEntry(String key, String value) {
@@ -40,14 +46,13 @@ public class ParamEntry implements Serializable {
     }
 
     /*
-    getters and setters
+     * getters and setters
      */
-
-    public Long getId() {
+    public Key getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Key id) {
         this.id = id;
     }
 
@@ -65,5 +70,13 @@ public class ParamEntry implements Serializable {
 
     public void setValue(String value) {
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "ParamEntry{" +
+                "key='" + key + '\'' +
+                ", value='" + value + '\'' +
+                '}';
     }
 }

@@ -1,6 +1,8 @@
 package in.ua.vitamon.server;
 
 import in.ua.vitamon.model.DataEntity;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.jdo.Extent;
 import javax.jdo.JDOHelper;
@@ -9,9 +11,9 @@ import javax.jdo.PersistenceManagerFactory;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Map;
 
 public class DataPersister {
+    private static final Logger log = LoggerFactory.getLogger(DataPersister.class);
 
     final PersistenceManagerFactory pmfInstance = JDOHelper.getPersistenceManagerFactory("transactions-optional");
 
@@ -35,6 +37,7 @@ public class DataPersister {
         PersistenceManager pm = pmfInstance.getPersistenceManager();
         try {
             pm.makePersistent(dto);
+            log.debug("saved data for :" + dto.toString());
         } finally {
             pm.close();
         }

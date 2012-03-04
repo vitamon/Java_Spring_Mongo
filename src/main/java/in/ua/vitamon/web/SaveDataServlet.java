@@ -42,7 +42,6 @@ public class SaveDataServlet extends HttpServlet {
     }
 
     protected void saveEntry(DataEntity data) {
-        log.debug("saving data for appID" + data.getAppId());
         dataPersister.create(data);
     }
 }

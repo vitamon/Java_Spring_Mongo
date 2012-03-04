@@ -36,6 +36,7 @@ public class DataEntity implements Serializable {
     private Date dateCreated;
 
     @Persistent
+    @Element(dependent = "true")
     private List<ParamEntry> params;
 
     /**
