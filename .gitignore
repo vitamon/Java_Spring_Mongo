@@ -2,10 +2,10 @@
 gen
 out
 .project
-target
+target/
 *.iml
 *.ipr
 *.iws
 *.idea
-.idea
+.idea/
 Desktop.ini
