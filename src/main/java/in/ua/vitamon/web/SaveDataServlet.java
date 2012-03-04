@@ -23,6 +23,7 @@ public class SaveDataServlet extends HttpServlet {
                          HttpServletResponse response) throws ServletException, IOException {
 
         log.debug("doGet");
+
         doPost(request, response);
     }
 
@@ -31,6 +32,8 @@ public class SaveDataServlet extends HttpServlet {
                           HttpServletResponse response) throws ServletException, IOException {
 
         log.debug("doPost");
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         DataEntity d = DataEntity.parseEntry(request.getParameterMap());
         if (d != null) {
             dataPersister.create(d);
