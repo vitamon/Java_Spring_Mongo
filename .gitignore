@@ -1,0 +1,11 @@
+.svn
+gen
+out
+.project
+target
+*.iml
+*.ipr
+*.iws
+*.idea
+.idea
+Desktop.ini
