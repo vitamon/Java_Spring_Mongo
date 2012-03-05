@@ -19,7 +19,7 @@ import java.util.Collection;
 public class StatServlet extends HttpServlet {
     private static final Logger log = LoggerFactory.getLogger(StatServlet.class);
 
-    private DataPersister dataPersister = new DataPersister();
+    //private DataPersister dataPersister = new DataPersister();
 
     @Override
     protected void doGet(HttpServletRequest request,
