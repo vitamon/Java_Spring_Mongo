@@ -1,9 +1,17 @@
 package in.ua.vitamon.model;
 
+import org.simpleframework.xml.ElementList;
+import org.simpleframework.xml.Root;
+import org.simpleframework.xml.Element;
+
 import javax.jdo.annotations.*;
 import java.io.Serializable;
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
+@Root
 @PersistenceCapable(identityType = IdentityType.APPLICATION)
 public class DataEntity implements Serializable {
 
@@ -29,12 +37,15 @@ public class DataEntity implements Serializable {
     /**
      * Holds application APP_ID from which the data is originated
      */
+    @Element
     @Persistent
     private String appId;
 
+    @Element
     @Persistent
     private Date dateCreated;
 
+    @ElementList
     @Persistent
     private List<ParamEntry> params;
 
@@ -47,11 +58,11 @@ public class DataEntity implements Serializable {
 
     public static DataEntity parseEntry(final Map<String, String[]> params) {
         Map<String, String> flatParams = toFlatMap(params);
-        
+
         if (!flatParams.containsKey(ParamIDs.APP_ID)) return null;
         // set app_id
         DataEntity dataEntity = new DataEntity(params.get(ParamIDs.APP_ID)[0]);
-        
+
         flatParams.remove(ParamIDs.APP_ID);
         dataEntity.setParams(ParamEntry.toArrayList(flatParams));
         return dataEntity;
@@ -59,12 +70,13 @@ public class DataEntity implements Serializable {
 
     /**
      * Converts Map<String, String[]> --> Map<String, String[0]>
+     *
      * @param params Parameters from HTTP request
      * @return uniqueParams
      */
     public static Map<String, String> toFlatMap(final Map<String, String[]> params) {
         Map<String, String> uniqueParams = new HashMap<String, String>();
-        for (String key:params.keySet()) {
+        for (String key : params.keySet()) {
             uniqueParams.put(key, params.get(key)[0]);
         }
         return uniqueParams;

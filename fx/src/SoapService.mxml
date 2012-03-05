@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+                       xmlns:mx="library://ns.adobe.com/flex/mx"
+                       width="100%" height="100%" minHeight="600" minWidth="800">
+    <fx:Script><![CDATA[
+        import mx.controls.Alert;
+        import mx.events.ListEvent;
+        import mx.rpc.events.FaultEvent;
+        import mx.rpc.events.ResultEvent;
+
+        private function myApp_resultHandler(event:ResultEvent):void {
+            // Alert.show('Success :' + event.statusCode)
+        }
+
+        private function myApp_faultHandler(event:FaultEvent):void {
+            Alert.show('Fault :' + event.statusCode)
+        }
+
+        private function button1_clickHandler(event:MouseEvent):void {
+            var params:URLVariables = new URLVariables();
+            params.APP_ID = textInput.text;
+            myReq.send(params);
+        }
+
+        private function parametersLabelFunction(item:Object, column:DataGridColumn):String {
+            return item.params.paramEntry.length.toString();
+        }
+
+        private function dg_itemRollOverHandler(event:ListEvent):void {
+            parametersList = event.itemRenderer.data.params.paramEntry;
+        }
+        ]]></fx:Script>
+    <fx:Declarations>
+        <s:HTTPService id="myReq"
+                       method="GET"
+                       showBusyCursor="true"
+                       url="http://just-save-it.appspot.com/xml"
+                       result="myApp_resultHandler(event)"
+                       fault="myApp_faultHandler(event)"/>
+
+        <mx:ArrayCollection id="parametersList"/>
+
+    </fx:Declarations>
+
+    <s:VGroup width="100%" height="100%">
+        <s:FormItem label="Application ID:" required="true">
+            <s:TextInput id="textInput" text="MY"/>
+        </s:FormItem>
+        <s:Button click="button1_clickHandler(event)" label="Send request"/>
+        <s:HGroup width="100%" height="100%">
+            <mx:DataGrid id="dg" dataProvider="{myReq.lastResult.result.dataEntity}" width="60%" height="100%"
+                         itemRollOver="dg_itemRollOverHandler(event)">
+                <mx:columns>
+                    <mx:DataGridColumn dataField="dateCreated"/>
+                    <mx:DataGridColumn id="parametersCol"
+                                       dataField="params"
+                                       headerText="Num of params:"
+                                       labelFunction="parametersLabelFunction"
+                            />
+                </mx:columns>
+            </mx:DataGrid>
+
+            <mx:DataGrid id="parametersDataGrid"
+                         dataProvider="{parametersList}"
+                         width="60%" height="100%"
+                         rowCount="{parametersList.length + 1}">
+                <mx:columns>
+                    <mx:DataGridColumn id="parameterNameCol"
+                                       dataField="key"
+                                       headerText="Parameter Name:"/>
+                    <mx:DataGridColumn id="parameterValueCol"
+                                       dataField="value"
+                                       headerText="Parameter Value:"/>
+                </mx:columns>
+            </mx:DataGrid>
+        </s:HGroup>
+
+    </s:VGroup>
+</s:Application>

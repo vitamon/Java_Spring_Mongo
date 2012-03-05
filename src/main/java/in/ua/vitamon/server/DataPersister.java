@@ -33,7 +33,6 @@ public class DataPersister {
     public List<DataEntity> findAllMatches(String appId) {
         PersistenceManager pm = PMF.get().getPersistenceManager();
         StringBuilder filter = new StringBuilder().append("appId == applicationId");
-
         Query query = pm.newQuery(DataEntity.class);
         query.declareParameters("String applicationId");
         query.setFilter(filter.toString());

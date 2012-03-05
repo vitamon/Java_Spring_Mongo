@@ -24,19 +24,19 @@ public class StatServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
-        request.setCharacterEncoding("UTF-8");
+        /*request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         log.debug("doGet");
-        DataEntity d = DataEntity.parseEntry(request.getParameterMap());
-        if (d != null) {
-            Collection<DataEntity> entries = dataPersister.findAllMatches(d.getAppId());
+        DataEntity d = DataEntity.parseEntry(request.getParameterMap());*/
+        //if (d != null) {
+           /* Collection<DataEntity> entries = dataPersister.findAllMatches(d.getAppId());
             log.debug("found " + entries.size() + " entries: " + entries.toString());
-            request.setAttribute("entries", entries);
-            forward(request, response, "index.jsp");
-        } else {
+            request.setAttribute("entries", entries);*/
+            forward(request, response, "fx.html");
+        /*} else {
             log.info("wrong or no data in request: " + request.getQueryString());
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-        }
+        }*/
 
     }
 

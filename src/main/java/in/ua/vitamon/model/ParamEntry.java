@@ -2,6 +2,8 @@ package in.ua.vitamon.model;
 
 import com.google.appengine.api.datastore.Key;
 
+import org.simpleframework.xml.Element;
+
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
@@ -24,8 +26,11 @@ public class ParamEntry implements Serializable {
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
     private Key id;
 
+    @Element
     @Persistent
     private String key;
+
+    @Element
     @Persistent
     private String value;
 
