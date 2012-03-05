@@ -7,10 +7,13 @@ http://just-save-it.appspot.com/save?APP_ID=MY&name=vasia&surname=petrov
 returns statusCode = 202 if OK
 returns statusCode = 400 if no APP_ID provided
 
-To get summary of saved data for your APP_ID: 
+To get XML summary, call:
+http://just-save-it.appspot.com/xml?APP_ID=MY
 
-http://just-save-it.appspot.com/stat?APP_ID=MY
+
+To get Flex summary of saved data for your APP_ID:
+http://just-save-it.appspot.com/stat
 
 TODO:
-1. add soap endpoint to get statistics in xml
+1. Migrate to Spring MVC
 2. add amf endpoint for statistcs
