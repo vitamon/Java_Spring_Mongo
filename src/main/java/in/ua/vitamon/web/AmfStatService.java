@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 import java.util.Collection;
 
 /**
+ * For GraniteDS endpoint
+ *
  * @author: vit.tam@gmail.com
  */
 public class AmfStatService {
@@ -17,7 +19,7 @@ public class AmfStatService {
 
     public Collection<DataEntity> searchAllEntries(String appId) {
         Collection<DataEntity> entries = dataPersister.findAllMatches(appId);
-        log.debug("found " + entries.size() + " entries: " + entries.toString());
+        log.info("found " + entries.size() + " entries: ");
         return entries;
     }
 }

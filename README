@@ -11,9 +11,8 @@ To get XML summary, call:
 http://just-save-it.appspot.com/xml?APP_ID=MY
 
 
-To get Flex summary of saved data for your APP_ID:
+To get Flex summary of saved data for your APP_ID (using GraniteDS amf endpoint):
 http://just-save-it.appspot.com/stat
 
 TODO:
 1. Migrate to Spring MVC
-2. add amf endpoint for statistcs
