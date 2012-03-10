@@ -3,7 +3,6 @@ gen
 out
 .project
 target/
-*.iml
 *.ipr
 *.iws
 *.idea
