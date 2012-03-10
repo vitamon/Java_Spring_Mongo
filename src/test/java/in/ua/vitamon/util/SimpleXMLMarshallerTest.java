@@ -2,6 +2,7 @@ package in.ua.vitamon.util;
 
 import in.ua.vitamon.model.DataEntity;
 import in.ua.vitamon.model.ParamEntry;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -15,6 +16,7 @@ import static org.junit.Assert.assertThat;
  */
 public class SimpleXMLMarshallerTest {
     @Test
+    @Ignore
     public void testToXML() throws Exception {
         List<ParamEntry> entries = new ArrayList<ParamEntry>();
         entries.add(new ParamEntry("name", "vit"));
