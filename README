@@ -16,3 +16,5 @@ http://just-save-it.appspot.com/stat
 
 TODO:
 1. Migrate to Spring MVC
+2. Implement Crud in statistics
+3. Implement export in csv
