@@ -6,9 +6,12 @@ import org.slf4j.LoggerFactory;
 
 import javax.jdo.PersistenceManager;
 import javax.jdo.Query;
+import java.io.Serializable;
 import java.util.List;
 
-public class DataPersister {
+public class DataPersister implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private static final Logger log = LoggerFactory.getLogger(DataPersister.class);
 
     public void create(DataEntity dto) {
