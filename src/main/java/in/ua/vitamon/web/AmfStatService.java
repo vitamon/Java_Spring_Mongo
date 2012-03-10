@@ -5,6 +5,7 @@ import in.ua.vitamon.server.DataPersister;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.Serializable;
 import java.util.Collection;
 
 /**
@@ -12,7 +13,9 @@ import java.util.Collection;
  *
  * @author: vit.tam@gmail.com
  */
-public class AmfStatService {
+public class AmfStatService implements Serializable{
+    private static final long serialVersionUID = 1L;
+
     private static final Logger log = LoggerFactory.getLogger(AmfStatService.class);
 
     private DataPersister dataPersister = new DataPersister();
