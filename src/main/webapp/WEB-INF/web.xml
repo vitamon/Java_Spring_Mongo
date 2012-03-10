@@ -42,6 +42,7 @@
     </welcome-file-list>
 
     <!-- Granite amf servlet -->
+
     <context-param>
         <param-name>servicesConfigPath</param-name>
         <param-value>/WEB-INF/flex/services-config.xml</param-value>

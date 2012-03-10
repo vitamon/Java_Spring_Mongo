@@ -19,7 +19,7 @@ public class AmfStatService {
 
     public Collection<DataEntity> searchAllEntries(String appId) {
         Collection<DataEntity> entries = dataPersister.findAllMatches(appId);
-        log.info("found " + entries.size() + " entries: ");
+        log.info("found " + entries.size() + " entries");
         return entries;
     }
 }

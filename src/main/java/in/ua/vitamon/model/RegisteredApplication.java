@@ -3,6 +3,8 @@ package in.ua.vitamon.model;
 import javax.jdo.annotations.*;
 
 /**
+ * Not used for yet
+ *
  * @author: vit.tam@gmail.com
  */
 @PersistenceCapable(identityType = IdentityType.APPLICATION)
