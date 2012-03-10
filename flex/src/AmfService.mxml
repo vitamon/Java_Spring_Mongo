@@ -21,11 +21,11 @@
         }
 
         private function parametersLabelFunction(item:Object, column:DataGridColumn):String {
-            return item.params.paramEntry.length.toString();
+            return item.params.length.toString();
         }
 
         private function dg_itemRollOverHandler(event:ListEvent):void {
-            parametersList = event.itemRenderer.data.params.paramEntry;
+            parametersList = event.itemRenderer.data.params;
         }
         ]]></fx:Script>
     <fx:Declarations>
@@ -33,8 +33,8 @@
         <mx:RemoteObject id="myReq"
                          destination="statAmf"
                          showBusyCursor="true"
-                         endpoint="http://localhost:9999/graniteamf/amf"
-                         fault="myApp_faultHandler(event)">
+                         fault="myApp_faultHandler(event)"
+                         result="myApp_resultHandler(event)">
             <mx:method name="searchAllEntries">
                 <mx:arguments>
                     <appId>{textInput.text}</appId>
@@ -52,7 +52,7 @@
         </s:FormItem>
         <s:Button click="button1_clickHandler(event)" label="Send request"/>
         <s:HGroup width="100%" height="100%">
-            <mx:DataGrid id="dg" dataProvider="{myReq.lastResult.result.dataEntity}" width="60%" height="100%"
+            <mx:DataGrid id="dg" dataProvider="{myReq.searchAllEntries.lastResult}" width="60%" height="100%"
                          itemRollOver="dg_itemRollOverHandler(event)">
                 <mx:columns>
                     <mx:DataGridColumn dataField="dateCreated"/>
