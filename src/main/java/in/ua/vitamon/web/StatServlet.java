@@ -32,7 +32,7 @@ public class StatServlet extends HttpServlet {
            /* Collection<DataEntity> entries = dataPersister.findAllMatches(d.getAppId());
             log.debug("found " + entries.size() + " entries: " + entries.toString());
             request.setAttribute("entries", entries);*/
-            forward(request, response, "fx.html");
+            forward(request, response, "flex.html");
         /*} else {
             log.info("wrong or no data in request: " + request.getQueryString());
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);

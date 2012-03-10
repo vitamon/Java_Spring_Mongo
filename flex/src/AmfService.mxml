@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
-                       xmlns:mx="library://ns.adobe.com/flex/mx"
-                       width="100%" height="100%" minHeight="600" minWidth="800">
+               xmlns:mx="library://ns.adobe.com/flex/mx"
+               width="100%" height="100%" minHeight="600" minWidth="800">
     <fx:Script><![CDATA[
         import mx.controls.Alert;
         import mx.events.ListEvent;
@@ -13,13 +13,11 @@
         }
 
         private function myApp_faultHandler(event:FaultEvent):void {
-            Alert.show('Fault :' + event.statusCode)
+            Alert.show('Fault :' + event.message);
         }
 
         private function button1_clickHandler(event:MouseEvent):void {
-            var params:URLVariables = new URLVariables();
-            params.APP_ID = textInput.text;
-            myReq.send(params);
+            myReq.searchAllEntries.send();
         }
 
         private function parametersLabelFunction(item:Object, column:DataGridColumn):String {
@@ -31,19 +29,25 @@
         }
         ]]></fx:Script>
     <fx:Declarations>
-        <s:HTTPService id="myReq"
-                       method="GET"
-                       showBusyCursor="true"
-                       url="http://just-save-it.appspot.com/xml"
-                       result="myApp_resultHandler(event)"
-                       fault="myApp_faultHandler(event)"/>
+
+        <mx:RemoteObject id="myReq"
+                         destination="statAmf"
+                         showBusyCursor="true"
+                         endpoint="http://localhost:9999/graniteamf/amf"
+                         fault="myApp_faultHandler(event)">
+            <mx:method name="searchAllEntries">
+                <mx:arguments>
+                    <appId>{textInput.text}</appId>
+                </mx:arguments>
+            </mx:method>
+        </mx:RemoteObject>
 
         <mx:ArrayCollection id="parametersList"/>
 
     </fx:Declarations>
 
     <s:VGroup width="100%" height="100%">
-        <s:FormItem label="Application ID:" required="true">
+        <s:FormItem label="AMF app ID:" required="true">
             <s:TextInput id="textInput" text="MY"/>
         </s:FormItem>
         <s:Button click="button1_clickHandler(event)" label="Send request"/>
