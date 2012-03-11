@@ -15,6 +15,7 @@
     </content>
     <orderEntry type="jdk" jdkName="flex_sdk_4.6.0.23201B AIR" jdkType="AIR SDK Type" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="granite" level="project" />
   </component>
 </module>
 
