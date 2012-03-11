@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e74259f-ed6c-458c-add2-2c138093fb7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/just_save_it_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/just_save_it_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="just-save-it.iws" />
@@ -86,7 +84,7 @@
       <file leaf-file-name="robots.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/robots.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.051671732">
+            <state line="2" column="45" selection-start="33" selection-end="33" vertical-scroll-proportion="0.051671732">
               <folding />
             </state>
           </provider>
@@ -1329,7 +1327,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/robots.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.051671732">
+        <state line="2" column="45" selection-start="33" selection-end="33" vertical-scroll-proportion="0.051671732">
           <folding />
         </state>
       </provider>
