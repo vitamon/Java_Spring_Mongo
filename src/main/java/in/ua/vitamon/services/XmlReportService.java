@@ -14,8 +14,8 @@ import java.util.Collection;
 /**
  * @author: vit.tam@gmail.com
  */
-public class XmlReportService implements IXMLReportService {
-   // private static final long serialVersionUID = 12L;
+public class XmlReportService implements IXMLReportService, Serializable {
+   private static final long serialVersionUID = 12L;
 
     private static final Logger log = LoggerFactory.getLogger(XmlReportService.class);
 

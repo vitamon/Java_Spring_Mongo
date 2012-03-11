@@ -8,7 +8,9 @@
     <option name="ADDITIONAL_COMPILER_OPTIONS" value="-services=D:\work\gae_tap\just-save-it\src\main\webapp\WEB-INF\flex\services-config.xml" />
     <option name="VERSION" value="3" />
   </component>
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/../out/production/flex" />
+    <output-test url="file://$MODULE_DIR$/../out/test/flex" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />

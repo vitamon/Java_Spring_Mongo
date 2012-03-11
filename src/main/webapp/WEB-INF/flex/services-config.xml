@@ -24,7 +24,7 @@
             <endpoint
                     uri="http://just-save-it.appspot.com/graniteamf/amf"
                     class="flex.messaging.endpoints.AMFEndpoint"/>
-            <!--            <endpoint
+            <!--                        <endpoint
             uri="http://localhost:9999/graniteamf/amf"
             class="flex.messaging.endpoints.AMFEndpoint"/>-->
         </channel-definition>

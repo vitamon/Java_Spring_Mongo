@@ -6,7 +6,6 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="just-save-it" />
-          <element id="jpa-descriptors" facet="just-save-it/jpa/JPA" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.google.appengine:appengine-api-1.0-sdk:1.5.3" />
@@ -27,7 +26,8 @@
           <element id="library" level="project" name="Maven: stax:stax-api:1.0.1" />
           <element id="library" level="project" name="Maven: stax:stax:1.2.0" />
           <element id="library" level="project" name="Maven: xpp3:xpp3:1.1.3.3" />
-          <element id="library" level="project" name="Maven: org.graniteds:granite-core:2.3.1.GA" />
+          <element id="library" level="project" name="Maven: org.graniteds:granite-core:2.0.0.GA" />
+          <element id="library" level="project" name="Maven: org.graniteds:granite-hibernate:2.0.0.GA" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:3.0.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.0.3.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
@@ -39,7 +39,6 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.0.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:3.0.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:3.0.3.RELEASE" />
-          <element id="library" level="project" name="granite" />
         </element>
       </element>
       <element id="directory" name="static">
