@@ -10,8 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -24,35 +24,33 @@ import java.io.IOException;
 public class AppController {
     private static final Logger log = LoggerFactory.getLogger(AppController.class);
 
+    @Autowired
     private DataPersisterService dataPersisterService;
 
     @Autowired
-    public void setDataPersisterService(DataPersisterService dataPersisterService) {
-        this.dataPersisterService = dataPersisterService;
-    }
+    private IXMLReportService reportService;
 
     @RequestMapping(value = "/stat", method = RequestMethod.GET)
-    public String redirectToFlex() {
-        log.info("Controller: flex");
-        return "flex";
+    public ModelAndView redirectToFlex() {
+        log.info("Controller: redirect to flex");
+        return new ModelAndView("redirect:/static/flex.html");
     }
 
-    @RequestMapping(value = "/xml/APP_ID={appID}", method = RequestMethod.GET)
+    @RequestMapping(value = "/xml?APP_ID={appID}", method = RequestMethod.GET)
     public void getXMLReport(@PathVariable String appID,
-                             HttpServletRequest request,
-                             HttpServletResponse response, IXMLReportService reportService) {
+                             HttpServletResponse response) {
         response.setCharacterEncoding("UTF-8");
         try {
             response.getWriter().write(reportService.getXMLreport(appID));
         } catch (IOException e) {
             log.error("Error " + e.getMessage());
         }
-        log.info("Controller: xml report");
+        log.info("Controller: xml report served");
     }
 
-    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @RequestMapping(value = "/save")
     public void saveData(HttpServletRequest request,
-                         HttpServletResponse response) throws ServletException, IOException {
+                         HttpServletResponse response) throws IOException {
 
         log.debug("Save");
         request.setCharacterEncoding("UTF-8");

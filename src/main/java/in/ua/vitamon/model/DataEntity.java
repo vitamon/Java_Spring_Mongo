@@ -15,7 +15,7 @@ import java.util.Map;
 @PersistenceCapable(identityType = IdentityType.APPLICATION)
 public class DataEntity implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 12L;
 
     @PrimaryKey
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)

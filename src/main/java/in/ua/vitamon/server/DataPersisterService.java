@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import javax.jdo.PersistenceManager;
 import javax.jdo.Query;
 import java.io.Serializable;
-import java.util.List;
+import java.util.Collection;
 
 public class DataPersisterService implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -19,7 +19,10 @@ public class DataPersisterService implements Serializable {
         try {
             pm.makePersistent(dto);
             log.info("saved data for :" + dto.toString());
-        } finally {
+        } catch (Exception e) {
+            log.error(e.getMessage());
+        }
+        finally {
             pm.close();
         }
     }
@@ -33,13 +36,13 @@ public class DataPersisterService implements Serializable {
         }
     }
 
-    public List<DataEntity> findAllMatches(String appId) {
+    public Collection<DataEntity> findAllMatches(String appId) {
         PersistenceManager pm = PMF.get().getPersistenceManager();
         StringBuilder filter = new StringBuilder().append("appId == applicationId");
         Query query = pm.newQuery(DataEntity.class);
         query.declareParameters("String applicationId");
         query.setFilter(filter.toString());
-        return (List<DataEntity>) query.execute(appId);
+        return (Collection<DataEntity>) query.execute(appId);
     }
 
 }

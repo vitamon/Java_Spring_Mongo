@@ -18,6 +18,7 @@ public class SimpleXMLMarshaller {
         Serializer serializer = new Persister();
         Writer writer = new StringWriter();
         try {
+            log.debug(object.toString());
             serializer.write(object, writer);
         } catch (Exception e) {
             log.error(e.getMessage());

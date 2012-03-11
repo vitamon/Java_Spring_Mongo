@@ -16,14 +16,13 @@ import static org.junit.Assert.assertThat;
  */
 public class SimpleXMLMarshallerTest {
     @Test
-    @Ignore
     public void testToXML() throws Exception {
         List<ParamEntry> entries = new ArrayList<ParamEntry>();
         entries.add(new ParamEntry("name", "vit"));
         entries.add(new ParamEntry("surname", "tam"));
         DataEntity dataEntity = new DataEntity("MY_APP", entries);
         System.out.println(SimpleXMLMarshaller.toXML(dataEntity));
-        assertThat(SimpleXMLMarshaller.toXML(dataEntity), is("...."));
+       // assertThat(SimpleXMLMarshaller.toXML(dataEntity), is("...."));
     }
 
 
