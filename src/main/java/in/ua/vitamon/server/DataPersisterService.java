@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.Collection;
 
 public class DataPersisterService implements Serializable {
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 11L;
 
     private static final Logger log = LoggerFactory.getLogger(DataPersisterService.class);
 

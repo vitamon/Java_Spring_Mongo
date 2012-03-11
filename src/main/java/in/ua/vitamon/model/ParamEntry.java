@@ -20,7 +20,7 @@ import java.util.Map;
 @PersistenceCapable
 public class ParamEntry implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 21L;
 
     @PrimaryKey
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)

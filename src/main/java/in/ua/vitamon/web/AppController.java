@@ -7,7 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -15,13 +14,15 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.Serializable;
 
 /**
  * @author: vit.tam@gmail.com
  */
 @Controller
-@SuppressWarnings(value = "serial")
 public class AppController {
+   // private static final long serialVersionUID = 12L;
+
     private static final Logger log = LoggerFactory.getLogger(AppController.class);
 
     @Autowired
@@ -36,12 +37,13 @@ public class AppController {
         return new ModelAndView("redirect:/static/flex.html");
     }
 
-    @RequestMapping(value = "/xml?APP_ID={appID}", method = RequestMethod.GET)
-    public void getXMLReport(@PathVariable String appID,
+    @RequestMapping(value = "/xml")
+    public void getXMLReport(HttpServletRequest request,
                              HttpServletResponse response) {
+        DataEntity d = DataEntity.parseEntry(request.getParameterMap());
         response.setCharacterEncoding("UTF-8");
         try {
-            response.getWriter().write(reportService.getXMLreport(appID));
+            response.getWriter().write(reportService.getXMLreport(d.getAppId()));
         } catch (IOException e) {
             log.error("Error " + e.getMessage());
         }

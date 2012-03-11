@@ -19,19 +19,14 @@
         </service>
     </services>
 
-    <factories>
-        <factory id="springFactory"
-                 class="org.granite.spring.SpringServiceFactory"/>
-    </factories>
-
     <channels>
         <channel-definition id="my-graniteamf" class="mx.messaging.channels.AMFChannel">
-            <!--            <endpoint
-            uri="http://just-save-it.appspot.com/graniteamf/amf"
-            class="flex.messaging.endpoints.AMFEndpoint"/>-->
             <endpoint
-                    uri="http://localhost:9999/graniteamf/amf"
+                    uri="http://just-save-it.appspot.com/graniteamf/amf"
                     class="flex.messaging.endpoints.AMFEndpoint"/>
+            <!--            <endpoint
+            uri="http://localhost:9999/graniteamf/amf"
+            class="flex.messaging.endpoints.AMFEndpoint"/>-->
         </channel-definition>
     </channels>
 

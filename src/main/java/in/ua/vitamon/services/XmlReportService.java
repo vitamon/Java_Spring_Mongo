@@ -8,12 +8,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.io.Serializable;
 import java.util.Collection;
 
 /**
  * @author: vit.tam@gmail.com
  */
 public class XmlReportService implements IXMLReportService {
+   // private static final long serialVersionUID = 12L;
 
     private static final Logger log = LoggerFactory.getLogger(XmlReportService.class);
 

@@ -13,12 +13,11 @@ import java.util.Collection;
  *
  * @author: vit.tam@gmail.com
  */
-public class AmfStatService implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class AmfStatService  {
+    //private static final long serialVersionUID = 12L;
 
     private static final Logger log = LoggerFactory.getLogger(AmfStatService.class);
 
-   // @Autowired
     private DataPersisterService dataPersisterService = new DataPersisterService();
 
     public Collection<DataEntity> searchAllEntries(String appId) {
