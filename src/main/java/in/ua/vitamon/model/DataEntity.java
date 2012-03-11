@@ -59,11 +59,11 @@ public class DataEntity implements Serializable {
     public static DataEntity parseEntry(final Map<String, String[]> params) {
         Map<String, String> flatParams = toFlatMap(params);
 
-        if (!flatParams.containsKey(ParamIDs.APP_ID)) return null;
+        if (!flatParams.containsKey(ParamID.APP_ID)) return null;
         // set app_id
-        DataEntity dataEntity = new DataEntity(params.get(ParamIDs.APP_ID)[0]);
+        DataEntity dataEntity = new DataEntity(params.get(ParamID.APP_ID)[0]);
 
-        flatParams.remove(ParamIDs.APP_ID);
+        flatParams.remove(ParamID.APP_ID);
         dataEntity.setParams(ParamEntry.toArrayList(flatParams));
         return dataEntity;
     }

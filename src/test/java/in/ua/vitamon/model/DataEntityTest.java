@@ -25,7 +25,7 @@ public class DataEntityTest {
     public void testParseEntry() throws Exception {
         params.put("p1", new String[]{"BLABLA", "423"});
         params.put("p2", new String[]{"33333", "dfg"});
-        params.put(ParamIDs.APP_ID, new String[]{"MYAPP0001", "222"});
+        params.put(ParamID.APP_ID, new String[]{"MYAPP0001", "222"});
 
         DataEntity d = DataEntity.parseEntry(params);
 

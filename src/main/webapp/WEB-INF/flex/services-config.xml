@@ -33,7 +33,7 @@
                 </channels>
                 <properties>
                     <scope>session</scope>
-                    <source>in.ua.vitamon.web.AmfStatService</source>
+                    <source>in.ua.vitamon.services.AmfStatService</source>
                 </properties>
             </destination>
         </service>

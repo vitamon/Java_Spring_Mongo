@@ -5,6 +5,4 @@ out
 target/
 *.ipr
 *.iws
-*.idea
-.idea/
 Desktop.ini

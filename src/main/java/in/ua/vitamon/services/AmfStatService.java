@@ -1,10 +1,11 @@
-package in.ua.vitamon.web;
+package in.ua.vitamon.services;
 
 import in.ua.vitamon.model.DataEntity;
-import in.ua.vitamon.server.DataPersister;
+import in.ua.vitamon.server.DataPersisterService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.inject.Inject;
 import java.io.Serializable;
 import java.util.Collection;
 
@@ -18,10 +19,11 @@ public class AmfStatService implements Serializable{
 
     private static final Logger log = LoggerFactory.getLogger(AmfStatService.class);
 
-    private DataPersister dataPersister = new DataPersister();
+    @Inject
+    private DataPersisterService dataPersisterService;
 
     public Collection<DataEntity> searchAllEntries(String appId) {
-        Collection<DataEntity> entries = dataPersister.findAllMatches(appId);
+        Collection<DataEntity> entries = dataPersisterService.findAllMatches(appId);
         log.info("found " + entries.size() + " entries");
         return entries;
     }

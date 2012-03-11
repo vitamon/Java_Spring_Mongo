@@ -9,10 +9,10 @@ import javax.jdo.Query;
 import java.io.Serializable;
 import java.util.List;
 
-public class DataPersister implements Serializable {
+public class DataPersisterService implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private static final Logger log = LoggerFactory.getLogger(DataPersister.class);
+    private static final Logger log = LoggerFactory.getLogger(DataPersisterService.class);
 
     public void create(DataEntity dto) {
         PersistenceManager pm = PMF.get().getPersistenceManager();

@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://java.sun.com/xml/ns/javaee"
-         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-         version="2.5">
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+    <!-- Path to Spring config files -->
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            /WEB-INF/conf/application-context-core.xml
+        </param-value>
+    </context-param>
+
+    <!--    /WEB-INF/conf/application-context-persistence.xml,
+    /WEB-INF/conf/application-context-graniteds.xml,
+    /WEB-INF/conf/application-context-security.xml-->
+
+    <!-- Spring listener -->
+
     <listener>
-        <listener-class>org.granite.config.GraniteConfigListener</listener-class>
+        <listener-class>
+            org.springframework.web.context.ContextLoaderListener
+        </listener-class>
     </listener>
 
+    <!-- Spring MVC dispatcher servlet for AMF remoting requests -->
+
     <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+
+
+
+    <!-- -->
+
+    <!--    <servlet>
         <servlet-name>SaveDataServlet</servlet-name>
         <servlet-class>in.ua.vitamon.web.SaveDataServlet</servlet-class>
     </servlet>
@@ -19,7 +53,7 @@
 
     <servlet>
         <servlet-name>XmlStatServlet</servlet-name>
-        <servlet-class>in.ua.vitamon.web.XmlStatServlet</servlet-class>
+        <servlet-class>in.ua.vitamon.services.XmlStatServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -35,7 +69,7 @@
     <servlet-mapping>
         <servlet-name>XmlStatServlet</servlet-name>
         <url-pattern>/xml</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping>-->
 
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
@@ -52,7 +86,7 @@
         <param-name>graniteConfigPath</param-name>
         <param-value>/WEB-INF/granite/granite-config.xml</param-value>
     </context-param>
-
+    <!--
     <filter>
         <filter-name>AMFMessageFilter</filter-name>
         <filter-class>org.granite.messaging.webapp.AMFMessageFilter</filter-class>
@@ -72,6 +106,6 @@
     <servlet-mapping>
         <servlet-name>AMFMessageServlet</servlet-name>
         <url-pattern>/graniteamf/*</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping>-->
 
 </web-app>
