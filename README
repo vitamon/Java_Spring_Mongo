@@ -14,6 +14,3 @@ http://just-save-it.appspot.com/xml?APP_ID=MY
 To get Flex summary of saved data for your APP_ID (using GraniteDS amf endpoint):
 http://just-save-it.appspot.com/stat
 
-TODO:
-- integrate spring mvc and granite ds
-
