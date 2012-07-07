@@ -14,3 +14,10 @@ http://just-save-it.appspot.com/xml?APP_ID=MY
 To get Flex summary of saved data for your APP_ID (using GraniteDS amf endpoint):
 http://just-save-it.appspot.com/stat
 
+
+Thechnology stack used:
+Google App engine for java hosting and persistence, 
+Servlet API, Spring MVC, Spring IoC, GraniteDS Amf service, 
+custom XML endpoint (XML marshalling via SimpeXML framework), 
+Flex 4 client.
+
