@@ -2,8 +2,7 @@ package in.ua.vitamon.web;
 
 import in.ua.vitamon.model.CityPair;
 import in.ua.vitamon.services.IDistanceService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,98 +18,119 @@ import java.io.UnsupportedEncodingException;
 @Controller
 @RequestMapping("/")
 public class AppController {
-    private static final long serialVersionUID = 12L;
+    private static final long serialVersionUID = 1L;
 
-    private static final Logger log = LoggerFactory.getLogger(AppController.class);
+    private static final Logger log = Logger.getLogger(AppController.class);
 
     @Autowired
     private IDistanceService distanceService;
 
+    /**
+     * URL encoded interface
+     */
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public void savePair(HttpServletRequest request,
                          @RequestParam("fromCity") String fromCity,
                          @RequestParam("toCity") String toCity,
-                         @RequestParam("distance") Double distance,
-                         HttpServletResponse response)
-    {
+                         @RequestParam("distance") String distance,
+                         HttpServletResponse response) {
         saveCityPair(request, fromCity, toCity, distance, response);
     }
 
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public void getDistance(HttpServletRequest request,
+                            @RequestParam("fromCity") String fromCity,
+                            @RequestParam("toCity") String toCity,
+                            HttpServletResponse response) {
+        getDistanceBetweenCities(request, fromCity, toCity, response);
+    }
+
+
+    /**
+     * REST interface
+     */
     @RequestMapping(value = "/{fromCity}/{toCity}/{distance}", method = RequestMethod.POST)
     public void savePairRest(HttpServletRequest request,
                              @PathVariable String fromCity,
                              @PathVariable String toCity,
-                             @PathVariable Double distance,
-                             HttpServletResponse response)
-    {
+                             @PathVariable String distance,
+                             HttpServletResponse response) {
         saveCityPair(request, fromCity, toCity, distance, response);
     }
 
+
     @RequestMapping(value = "/{fromCity}/{toCity}", method = RequestMethod.GET)
-    public void getDistance(HttpServletRequest request,
-                            @PathVariable String fromCity,
-                            @PathVariable String toCity,
-                            HttpServletResponse response)
-    {
-        if (!setRequestEncoding(request, response)) return;
-
-        CityPair data = CityPair.parse(fromCity, toCity);
-
-        if (data == null)
-        {
-            log.debug("wrong or no data in request: {}", request.getQueryString());
-            setBadRequestStatus(response);
-            return;
-        }
-
-        CityPair result = distanceService.lookup(data.getCityPair());
-        response.setStatus(HttpServletResponse.SC_OK);
-        response.setCharacterEncoding("UTF-8");
-        try
-        {
-            response.getWriter().write(Double.toString(result.getDistance()));
-        } catch (IOException e)
-        {
-            log.error(e.getMessage());
-            setBadRequestStatus(response);
-        }
+    public void getDistanceRest(HttpServletRequest request,
+                                @PathVariable String fromCity,
+                                @PathVariable String toCity,
+                                HttpServletResponse response) {
+        getDistanceBetweenCities(request, fromCity, toCity, response);
     }
 
-    private void saveCityPair(HttpServletRequest request, String fromCity, String toCity, Double distance, HttpServletResponse response)
-    {
+
+    private void saveCityPair(HttpServletRequest request,
+                              String fromCity,
+                              String toCity,
+                              String distance,
+                              HttpServletResponse response) {
         if (!setRequestEncoding(request, response)) return;
-        log.debug("request data: {}, {}, {} ", fromCity, toCity, distance);
 
+        if (log.isDebugEnabled()) {
+            log.debug("request data: " + fromCity + " " + toCity + " " + distance);
+        }
+
+        // parse data
         CityPair data = CityPair.parse(fromCity, toCity, distance);
-
-        if (data != null)
-        {
-            distanceService.upsert(data);
-            distanceService.upsert(CityPair.parse(toCity, fromCity, distance));
-            response.setStatus(HttpServletResponse.SC_OK);
-        } else
-        {
-            log.debug("wrong or no data in request: " + request.getQueryString());
+        if (data != null) {
+            if (distanceService.upsert(data)) {
+                response.setStatus(HttpServletResponse.SC_OK);
+            } else {
+                response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            }
+        } else {
+            log.debug("Invalid or no data in request: " + request.getQueryString());
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
         }
     }
 
-    private boolean setRequestEncoding(HttpServletRequest request, HttpServletResponse response)
-    {
-        try
-        {
-            request.setCharacterEncoding("UTF-8");
-        } catch (UnsupportedEncodingException e)
-        {
+    private void getDistanceBetweenCities(HttpServletRequest request,
+                                          String fromCity,
+                                          String toCity,
+                                          HttpServletResponse response) {
+        if (!setRequestEncoding(request, response)) return;
+
+        // parse data
+        CityPair data = CityPair.parse(fromCity, toCity);
+        if (null == data) {
+            log.debug("Invalid or no data in request: " + request.getQueryString());
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            return;
+        }
+
+        // seek result
+        CityPair result = distanceService.lookup(data.getCityPair());
+        if (null == result) {
+            response.setStatus(HttpServletResponse.SC_NO_CONTENT);
+            return;
+        }
+        response.setCharacterEncoding("UTF-8");
+        try {
+            response.getWriter().write(Double.toString(result.getDistance()));
+        } catch (IOException e) {
             log.error(e.getMessage());
-            setBadRequestStatus(response);
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
+        response.setStatus(HttpServletResponse.SC_OK);
+    }
+
+    private boolean setRequestEncoding(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            request.setCharacterEncoding("UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            log.error(e.getMessage());
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             return false;
         }
         return true;
-    }
-
-    private void setBadRequestStatus(HttpServletResponse response)
-    {
-        response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
     }
 }

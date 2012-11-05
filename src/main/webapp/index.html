@@ -1,24 +1,43 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-	"http://www.w3.org/TR/html4/loose.dtd">
+        "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<title></title>
+    <title>Test page</title>
 </head>
 <body>
+<h1>Save data</h1>
+<br/>
+
 <form action="/distances/save" method="post">
-	<label>
-		From City:
-		<input type="text" name="fromCity" value=""/>
-	</label>
-	<label>
-		To City:
-		<input type="text" name="toCity" value=""/>
-	</label>
-	<label>
-		Distance:
-		<input type="text" name="distance" value=""/>
-	</label>
-	<input type="submit"/>
+    <label>
+        From City:
+        <input type="text" name="fromCity" value=""/>
+    </label>
+    <label>
+        To City:
+        <input type="text" name="toCity" value=""/>
+    </label>
+    <label>
+        Distance:
+        <input type="text" name="distance" value=""/>
+    </label>
+    <input type="submit"/>
+</form>
+<br/>
+
+<h1>Load data</h1>
+<br/>
+
+<form action="/distances/" method="get">
+    <label>
+        From City:
+        <input type="text" name="fromCity" value=""/>
+    </label>
+    <label>
+        To City:
+        <input type="text" name="toCity" value=""/>
+    </label>
+    <input type="submit"/>
 </form>
 </body>
 </html>

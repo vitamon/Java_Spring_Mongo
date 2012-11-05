@@ -19,6 +19,11 @@
         <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
     </listener>
 
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
     <!-- Spring MVC dispatcher servlet -->
 
     <servlet>
@@ -31,10 +36,6 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/distances/*</url-pattern>
     </servlet-mapping>
-
-    <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-    </welcome-file-list>
 
 
 </web-app>

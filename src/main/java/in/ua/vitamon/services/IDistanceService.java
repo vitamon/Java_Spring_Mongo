@@ -4,7 +4,7 @@ import in.ua.vitamon.model.CityPair;
 
 public interface IDistanceService {
 
-    void upsert(CityPair data);
+    boolean upsert(CityPair data);
 
     CityPair lookup(String key);
 }

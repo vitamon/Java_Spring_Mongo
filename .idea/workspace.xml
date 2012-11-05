@@ -7,101 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e74259f-ed6c-458c-add2-2c138093fb7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_2_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_core_1_2_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_1_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/model/CityPair.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/repositories/DistanceRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/DistanceService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/IDistanceService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring-data.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring.properties" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__ch_qos_logback_logback_classic_0_9_24.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__ch_qos_logback_logback_core_0_9_24.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__com_google_appengine_appengine_api_1_0_sdk_1_5_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__com_google_appengine_appengine_api_labs_1_5_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__com_google_appengine_appengine_api_stubs_1_5_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__com_google_appengine_appengine_testing_1_5_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__com_google_appengine_appengine_tools_sdk_1_5_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__com_google_appengine_orm_datanucleus_appengine_1_0_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__javax_jdo_jdo2_api_2_3_eb.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__javax_transaction_jta_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__javax_transaction_transaction_api_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__junit_junit_4_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_apache_geronimo_specs_geronimo_jpa_3_0_spec_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_apache_geronimo_specs_geronimo_servlet_2_5_spec_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_datanucleus_datanucleus_core_1_1_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_datanucleus_datanucleus_jpa_1_1_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_graniteds_granite_core_2_0_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_graniteds_granite_hibernate_2_0_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_simpleframework_simple_xml_2_6_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__stax_stax_1_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__stax_stax_api_1_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__taglibs_standard_1_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__xpp3_xpp3_1_1_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\granite.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\flex\flex.iml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\flex\src\AmfService.mxml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\flex\src\HTTPSaveExample.mxml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\flex\src\SoapService.mxml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\flex\src\flex.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\flex\src\history\history.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\flex\src\history\history.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\flex\src\history\historyFrame.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\flex\src\playerProductInstall.swf" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\flex\src\swfobject.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\java\in\ua\vitamon\model\DataEntity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\java\in\ua\vitamon\model\ParamEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\java\in\ua\vitamon\model\ParamID.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\java\in\ua\vitamon\server\DataPersisterService.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\java\in\ua\vitamon\server\PMF.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\java\in\ua\vitamon\services\AmfStatService.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\java\in\ua\vitamon\services\IXMLReportService.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\java\in\ua\vitamon\services\XmlReportService.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\java\in\ua\vitamon\util\SimpleXMLMarshaller.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\webapp\WEB-INF\appengine-web.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\webapp\WEB-INF\classes\META-INF\jdoconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\webapp\WEB-INF\classes\META-INF\persistence.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\webapp\WEB-INF\classes\logging.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\webapp\WEB-INF\datastore-indexes.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\webapp\WEB-INF\flex\services-config.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\webapp\WEB-INF\granite\granite-config.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\webapp\WEB-INF\spring\application-context-graniteds.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\webapp\crossdomain.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\main\webapp\robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\_my\mongo_cities\src\test\java\in\ua\vitamon\util\SimpleXMLMarshallerTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/favicon.ico" afterPath="$PROJECT_DIR$/src/main/webapp/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_all_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_1_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/IntegrationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/in/ua/vitamon/model/IntegrationTest-context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/spring.properties" />
+      <change type="DELETED" beforePath="D:\work\mongo_java\src\main\java\in\ua\vitamon\repositories\DistanceRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\mongo_java\src\main\webapp\WEB-INF\classes\log4j.properties" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/just_save_it_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/just_save_it_war.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/just_save_it_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/just_save_it_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just-save-it.iml" afterPath="$PROJECT_DIR$/just-save-it.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/model/CityPair.java" afterPath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/model/CityPair.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/DistanceService.java" afterPath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/DistanceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/IDistanceService.java" afterPath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/IDistanceService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/web/AppController.java" afterPath="$PROJECT_DIR$/src/main/java/in/ua/vitamon/web/AppController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/application-context-core.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/application-context-core.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring-data.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring-data.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/DataEntityTest.java" afterPath="$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/DataEntityTest.java" />
-      <change type="MOVED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_2.xml" />
-      <change type="MOVED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_springframework_spring_aop_3_0_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_1_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_springframework_spring_asm_3_0_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_asm_3_1_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_springframework_spring_beans_3_0_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_1_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_springframework_spring_context_3_0_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_1_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_springframework_spring_context_support_3_0_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_3_1_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_springframework_spring_core_3_0_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_1_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_springframework_spring_expression_3_0_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_1_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_springframework_spring_web_3_0_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_1_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="D:\work\_my\mongo_cities\.idea\libraries\Maven__org_springframework_spring_webmvc_3_0_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_3_1_2_RELEASE.xml" />
+      <change type="MOVED" beforePath="D:\work\mongo_java\.idea\libraries\Maven__org_slf4j_slf4j_api_1_7_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_10.xml" />
+      <change type="MOVED" beforePath="D:\work\mongo_java\src\test\java\in\ua\vitamon\model\DataEntityTest.java" afterPath="$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/CityPairTest.java" />
     </list>
     <ignored path="just-save-it.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -168,30 +99,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DistanceService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/DistanceService.java">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="19" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DistanceRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/repositories/DistanceRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="17" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataEntityTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/DataEntityTest.java">
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="1" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
+            <state line="4" column="3" selection-start="116" selection-end="119" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -200,7 +120,7 @@
       <file leaf-file-name="AppController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/web/AppController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="5" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.0">
+            <state line="87" column="79" selection-start="3510" selection-end="3510" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,11 +128,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Logger.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar!/org/slf4j/Logger.class">
+      <file leaf-file-name="HttpServletResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/http/HttpServletResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="9" selection-start="1698" selection-end="1698" vertical-scroll-proportion="-20.4">
+            <state line="356" column="28" selection-start="11963" selection-end="11963" vertical-scroll-proportion="-0.68">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CityPairTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/CityPairTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="27" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntegrationTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/IntegrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="788" selection-end="788" vertical-scroll-proportion="0.5692841">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDistanceService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/IDistanceService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="17" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DistanceService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/DistanceService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="13" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CityPair.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/model/CityPair.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -220,55 +193,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="25" selection-start="2125" selection-end="2125" vertical-scroll-proportion="-29.04">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application-context-core.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/application-context-core.xml">
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="8" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-19.55">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="458" selection-end="458" vertical-scroll-proportion="0.33156028">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="27" selection-start="177" selection-end="177" vertical-scroll-proportion="-4.576923">
+            <state line="121" column="0" selection-start="4020" selection-end="4020" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -296,22 +221,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/DistanceRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/CityPersistingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/ICityPersisterService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/repos/DistanceRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/repositories/DistanceRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/model/CityPairDto.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/application-context-core.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring-data.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/AbstractIntegrationTest-context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/model/CityPair.java" />
-        <option value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/IDistanceService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/DataEntityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/application-context-core.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/spring-data.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/AbstractIntegrationTest-context.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/AbstractIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/in/ua/vitamon/model/spring.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/IntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/CityPairTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/in/ua/vitamon/model/spring-data.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/in/ua/vitamon/model/IntegrationTest-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/DistanceService.java" />
         <option value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/web/AppController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/log4j.properties" />
       </list>
     </option>
   </component>
@@ -325,7 +250,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\maven" />
+        <option name="mavenHome" value="C:\maven2" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -343,7 +268,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="MongoDB Cities" />
+          <option name="myItemId" value="Java MongoDB Distances" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -353,7 +278,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="MongoDB Cities" />
+          <option name="myItemId" value="Java MongoDB Distances" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -364,10 +289,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1873" />
-    <option name="height" value="1096" />
+    <option name="x" value="132" />
+    <option name="y" value="64" />
+    <option name="width" value="1539" />
+    <option name="height" value="1071" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -699,12 +624,12 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -723,7 +648,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
+              <option name="myItemId" value="mongo_java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -733,7 +658,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="mongo_java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="mongo_cities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo_java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -759,7 +702,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
+              <option name="myItemId" value="mongo_java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -781,7 +724,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
+              <option name="myItemId" value="mongo_java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -793,11 +736,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -807,93 +746,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
+              <option name="myItemId" value="mongo_java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -923,7 +776,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
+              <option name="myItemId" value="mongo_java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -953,37 +806,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vitamon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repositories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo_cities" />
+              <option name="myItemId" value="mongo_java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1009,21 +832,30 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongo_cities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="136" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="144" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="136" />
     <property name="project.structure.proportion" value="0.13540791" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="144" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="142" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="144" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="451" />
@@ -1037,19 +869,27 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/model" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/in/ua/vitamon/model" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="MavenSettings" />
-    <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="project.structure.side.proportion" value="0.3298969" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -1061,21 +901,29 @@
       <recent name="in.ua.vitamon.web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\mongo_java\src\test\resources" />
       <recent name="D:\work\_my\mongo_cities\src\main\webapp\WEB-INF\spring" />
       <recent name="D:\work\_my\mongo_cities\src\main\java\in\ua\vitamon\services" />
       <recent name="D:\work\_my\mongo_cities\src\main\webapp" />
       <recent name="D:\work\gae_tap\just-save-it\src\main\webapp\WEB-INF" />
-      <recent name="D:\work\gae_tap\just-save-it\flex\src" />
     </key>
     <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="in.ua.vitamon.model.CityPair" />
       <recent name="in.ua.vitamon.model.ParamIDs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\mongo_java\src\test\resources" />
+      <recent name="D:\work\mongo_java\src\test" />
+      <recent name="D:\work\mongo_java\src\test\resources\in\ua\vitamon\model" />
+      <recent name="D:\work\mongo_java\src\test\java\in\ua\vitamon\model" />
+      <recent name="D:\work\mongo_java\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="in.ua.vitamon.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 7">
-    <configuration default="false" name="DataEntityTest" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.IntegrationTest">
+    <configuration default="false" name="CityPairTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
           <option name="PATTERN" value="in.ua.vitamon.model.*" />
@@ -1086,7 +934,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="PACKAGE_NAME" value="in.ua.vitamon.model" />
-      <option name="MAIN_CLASS_NAME" value="in.ua.vitamon.model.DataEntityTest" />
+      <option name="MAIN_CLASS_NAME" value="in.ua.vitamon.model.CityPairTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="" />
@@ -1102,6 +950,40 @@
       <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Cover" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="in.ua.vitamon.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="just-save-it" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="in.ua.vitamon.model" />
+      <option name="MAIN_CLASS_NAME" value="in.ua.vitamon.model.IntegrationTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -1237,17 +1119,6 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="idea" />
       <module name="" />
@@ -1273,6 +1144,42 @@
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
         <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Generated" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
@@ -1334,42 +1241,6 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Generated" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1449,9 +1320,10 @@
         </option>
       </method>
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.DataEntityTest" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CityPairTest" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.IntegrationTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1507,33 +1379,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1873" height="1096" extended-state="7" />
+    <frame x="132" y="64" width="1539" height="1071" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Robotlegs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.72888017" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Archetypes" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17628205" sideWeight="0.32523468" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34817815" sideWeight="0.21905698" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39980355" sideWeight="0.491453" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39956093" sideWeight="0.491453" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17628205" sideWeight="0.67090005" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17563118" sideWeight="0.67090005" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34775642" sideWeight="0.16208251" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2956778" sideWeight="0.47863248" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32725322" sideWeight="0.4722222" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711306" sideWeight="0.4722222" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19764957" sideWeight="0.43123773" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34775642" sideWeight="0.16208251" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17283268" sideWeight="0.650641" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854778" sideWeight="0.650641" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34935898" sideWeight="0.5245727" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17129317" sideWeight="0.650933" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32769126" sideWeight="0.650933" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34906697" sideWeight="0.5245727" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Archetypes" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1602,93 +1476,19 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.0.3.RELEASE/spring-data-mongodb-1.0.3.RELEASE-sources.jar!/org/springframework/data/mongodb/core/query/Query.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/in/ua/vitamon/model/IntegrationTest-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="35" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/model/CityPair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="18" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1376#1394#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.0.3.RELEASE/spring-data-mongodb-1.0.3.RELEASE-sources.jar!/org/springframework/data/mongodb/core/MongoTemplate.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/spring.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="524" column="17" selection-start="19871" selection-end="19871" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.0.3.RELEASE/spring-data-mongodb-1.0.3.RELEASE-sources.jar!/org/springframework/data/mongodb/core/query/Update.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.0.3.RELEASE/spring-data-mongodb-1.0.3.RELEASE-sources.jar!/org/springframework/data/mongodb/core/MongoOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="472" column="40" selection-start="20084" selection-end="20084" vertical-scroll-proportion="-11.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/IDistanceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/DataEntityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/DistanceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="19" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/repositories/DistanceRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="177" selection-end="177" vertical-scroll-proportion="-4.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar!/org/slf4j/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="9" selection-start="1698" selection-end="1698" vertical-scroll-proportion="-20.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/web/AppController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="5" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1696,39 +1496,122 @@
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
         <state />
       </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="878" selection-end="878" vertical-scroll-proportion="-21.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
       </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring-data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="61" selection-start="1359" selection-end="1359" vertical-scroll-proportion="-19.55">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="25" selection-start="2125" selection-end="2125" vertical-scroll-proportion="-29.04">
+        <state line="121" column="0" selection-start="4020" selection-end="4020" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/application-context-core.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-19.55">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="458" selection-end="458" vertical-scroll-proportion="0.33156028">
+        <state line="4" column="3" selection-start="116" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/model/CityPair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/IDistanceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/CityPairTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="27" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/services/DistanceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="13" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/http/HttpServletResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="356" column="28" selection-start="11963" selection-end="11963" vertical-scroll-proportion="-0.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/in/ua/vitamon/web/AppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="79" selection-start="3510" selection-end="3510" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/in/ua/vitamon/model/IntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="788" selection-end="788" vertical-scroll-proportion="0.5692841">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1782,10 +1665,10 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="javaee-facet-resources" />
               <type id="artifact" />
               <type id="library" />
               <type id="jpa-descriptors" />
+              <type id="javaee-facet-resources" />
             </show-content>
           </artifact-editor>
           <last-edited>just-save-it:war exploded</last-edited>
@@ -1816,7 +1699,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3298969" />
               </list>
             </option>
           </splitter-proportions>
@@ -1828,7 +1711,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3298969" />
               </list>
             </option>
           </splitter-proportions>

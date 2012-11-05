@@ -1,23 +1,5 @@
-This app saves data from parameters of POST request 
+This Java/Spring/Mongodb app saves data about distances between cities
 
-Usage: 
+Both rest and url encoded format supported
 
-http://just-save-it.appspot.com/save?APP_ID=MY&name=vasia&surname=petrov 
-
-returns statusCode = 202 if OK
-returns statusCode = 400 if no APP_ID provided
-
-To get XML summary, call:
-http://just-save-it.appspot.com/xml?APP_ID=MY
-
-
-To get Flex summary of saved data for your APP_ID (using GraniteDS amf endpoint):
-http://just-save-it.appspot.com/stat
-
-
-Thechnology stack used:
-Google App engine for java hosting and persistence, 
-Servlet API, Spring MVC, Spring IoC, GraniteDS Amf service, 
-custom XML endpoint (XML marshalling via SimpeXML framework), 
-Flex 4 client.
-
+See index.html for examples of usage
