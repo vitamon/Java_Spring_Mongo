@@ -6,9 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.stereotype.Service;
 
-import static org.springframework.data.mongodb.core.query.Criteria.where;
-import static org.springframework.data.mongodb.core.query.Query.query;
-
 @Service
 public class DistanceService implements IDistanceService {
     private static final Logger log = Logger.getLogger(DistanceService.class);
@@ -19,7 +16,7 @@ public class DistanceService implements IDistanceService {
     @Override
     public boolean upsert(CityPair data) {
         try {
-            CityPair upd = mongoOps.findOne(query(where("id").is(data.getCityPair())), CityPair.class);
+            CityPair upd = lookup(data.getCityPair());
             if (null == upd) {
                 mongoOps.insert(data);
             } else {
@@ -34,12 +31,6 @@ public class DistanceService implements IDistanceService {
 
     @Override
     public CityPair lookup(String key) {
-        CityPair data = null;
-        try {
-            data = mongoOps.findById(key, CityPair.class);
-        } catch (Exception e) {
-            log.error("Error when processing lookup:" + key);
-        }
-        return data;
+        return mongoOps.findById(key, CityPair.class);
     }
 }

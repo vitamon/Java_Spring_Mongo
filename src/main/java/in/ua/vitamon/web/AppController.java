@@ -101,26 +101,35 @@ public class AppController {
 
         // parse data
         CityPair data = CityPair.parse(fromCity, toCity);
-        if (null == data) {
+        if (data == null) {
             log.debug("Invalid or no data in request: " + request.getQueryString());
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
 
         // seek result
-        CityPair result = distanceService.lookup(data.getCityPair());
-        if (null == result) {
+        CityPair result = null;
+        try {
+            result = distanceService.lookup(data.getCityPair());
+        } catch (Exception e) {
+            log.error(e.getMessage());
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            return;
+        }
+
+        if (result == null) {
             response.setStatus(HttpServletResponse.SC_NO_CONTENT);
             return;
         }
-        response.setCharacterEncoding("UTF-8");
+
         try {
+            response.setCharacterEncoding("UTF-8");
             response.getWriter().write(Double.toString(result.getDistance()));
+            response.setStatus(HttpServletResponse.SC_OK);
         } catch (IOException e) {
             log.error(e.getMessage());
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
         }
-        response.setStatus(HttpServletResponse.SC_OK);
     }
 
     private boolean setRequestEncoding(HttpServletRequest request, HttpServletResponse response) {
