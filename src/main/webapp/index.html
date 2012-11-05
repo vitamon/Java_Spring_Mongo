@@ -1,32 +1,24 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
+	"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title></title>
+	<title></title>
 </head>
 <body>
-<h2>This app saves data from parameters of POST request</h2>
-<br/>
-Usage:
-<br>
-<a href="http://just-save-it.appspot.com/save?APP_ID=MY&name=vasia&surname=petrov">http://just-save-it.appspot.com/save?APP_ID=MY&name=vasia&surname=petrov</a>
-<br>
-<br>
-returns statusCode = 202 if OK
-<br>
-returns statusCode = 400 if no APP_ID provided
-<br>
-<br>
-To get XML summary of saved data for your app:
-<br>
-<a href="http://just-save-it.appspot.com/xml?APP_ID=MY">http://just-save-it.appspot.com/xml?APP_ID=MY</a>
-<br>
-<br>
-To get Flex summary (GraniteDS amf endpoint) of saved data for your app go:
-<br>
-<a href="http://just-save-it.appspot.com/stat">http://just-save-it.appspot.com/stat</a>
-<br>
-<br>
-
+<form action="/distances/save" method="post">
+	<label>
+		From City:
+		<input type="text" name="fromCity" value=""/>
+	</label>
+	<label>
+		To City:
+		<input type="text" name="toCity" value=""/>
+	</label>
+	<label>
+		Distance:
+		<input type="text" name="distance" value=""/>
+	</label>
+	<input type="submit"/>
+</form>
 </body>
 </html>

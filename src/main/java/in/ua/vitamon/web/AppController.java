@@ -1,70 +1,116 @@
 package in.ua.vitamon.web;
 
-import in.ua.vitamon.model.DataEntity;
-import in.ua.vitamon.server.DataPersisterService;
-import in.ua.vitamon.services.IXMLReportService;
+import in.ua.vitamon.model.CityPair;
+import in.ua.vitamon.services.IDistanceService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
 
-/**
- * @author: vit.tam@gmail.com
- */
 @Controller
+@RequestMapping("/")
 public class AppController {
-   // private static final long serialVersionUID = 12L;
+    private static final long serialVersionUID = 12L;
 
     private static final Logger log = LoggerFactory.getLogger(AppController.class);
 
     @Autowired
-    private DataPersisterService dataPersisterService;
+    private IDistanceService distanceService;
 
-    @Autowired
-    private IXMLReportService reportService;
-
-    @RequestMapping(value = "/stat", method = RequestMethod.GET)
-    public ModelAndView redirectToFlex() {
-        log.info("Controller: redirect to flex");
-        return new ModelAndView("redirect:/static/flex.html");
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public void savePair(HttpServletRequest request,
+                         @RequestParam("fromCity") String fromCity,
+                         @RequestParam("toCity") String toCity,
+                         @RequestParam("distance") Double distance,
+                         HttpServletResponse response)
+    {
+        saveCityPair(request, fromCity, toCity, distance, response);
     }
 
-    @RequestMapping(value = "/xml")
-    public void getXMLReport(HttpServletRequest request,
-                             HttpServletResponse response) {
-        DataEntity d = DataEntity.parseEntry(request.getParameterMap());
-        response.setCharacterEncoding("UTF-8");
-        try {
-            response.getWriter().write(reportService.getXMLreport(d.getAppId()));
-        } catch (IOException e) {
-            log.error("Error " + e.getMessage());
+    @RequestMapping(value = "/{fromCity}/{toCity}/{distance}", method = RequestMethod.POST)
+    public void savePairRest(HttpServletRequest request,
+                             @PathVariable String fromCity,
+                             @PathVariable String toCity,
+                             @PathVariable Double distance,
+                             HttpServletResponse response)
+    {
+        saveCityPair(request, fromCity, toCity, distance, response);
+    }
+
+    @RequestMapping(value = "/{fromCity}/{toCity}", method = RequestMethod.GET)
+    public void getDistance(HttpServletRequest request,
+                            @PathVariable String fromCity,
+                            @PathVariable String toCity,
+                            HttpServletResponse response)
+    {
+        if (!setRequestEncoding(request, response)) return;
+
+        CityPair data = CityPair.parse(fromCity, toCity);
+
+        if (data == null)
+        {
+            log.debug("wrong or no data in request: {}", request.getQueryString());
+            setBadRequestStatus(response);
+            return;
         }
-        log.info("Controller: xml report served");
+
+        CityPair result = distanceService.lookup(data.getCityPair());
+        response.setStatus(HttpServletResponse.SC_OK);
+        response.setCharacterEncoding("UTF-8");
+        try
+        {
+            response.getWriter().write(Double.toString(result.getDistance()));
+        } catch (IOException e)
+        {
+            log.error(e.getMessage());
+            setBadRequestStatus(response);
+        }
     }
 
-    @RequestMapping(value = "/save")
-    public void saveData(HttpServletRequest request,
-                         HttpServletResponse response) throws IOException {
+    private void saveCityPair(HttpServletRequest request, String fromCity, String toCity, Double distance, HttpServletResponse response)
+    {
+        if (!setRequestEncoding(request, response)) return;
+        log.debug("request data: {}, {}, {} ", fromCity, toCity, distance);
 
-        log.debug("Save");
-        request.setCharacterEncoding("UTF-8");
-        response.setCharacterEncoding("UTF-8");
-        DataEntity d = DataEntity.parseEntry(request.getParameterMap());
-        if (d != null) {
-            dataPersisterService.create(d);
-            response.setStatus(HttpServletResponse.SC_ACCEPTED);
-        } else {
-            log.info("wrong or no data in request: " + request.getQueryString());
+        CityPair data = CityPair.parse(fromCity, toCity, distance);
+
+        if (data != null)
+        {
+            distanceService.upsert(data);
+            distanceService.upsert(CityPair.parse(toCity, fromCity, distance));
+            response.setStatus(HttpServletResponse.SC_OK);
+        } else
+        {
+            log.debug("wrong or no data in request: " + request.getQueryString());
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
         }
     }
 
+    private boolean setRequestEncoding(HttpServletRequest request, HttpServletResponse response)
+    {
+        try
+        {
+            request.setCharacterEncoding("UTF-8");
+        } catch (UnsupportedEncodingException e)
+        {
+            log.error(e.getMessage());
+            setBadRequestStatus(response);
+            return false;
+        }
+        return true;
+    }
+
+    private void setBadRequestStatus(HttpServletResponse response)
+    {
+        response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+    }
 }

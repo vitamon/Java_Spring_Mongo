@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/flex/flex.iml" filepath="$PROJECT_DIR$/flex/flex.iml" />
       <module fileurl="file://$PROJECT_DIR$/fx/flex.iml" filepath="$PROJECT_DIR$/fx/flex.iml" />
       <module fileurl="file://$PROJECT_DIR$/just-save-it.iml" filepath="$PROJECT_DIR$/just-save-it.iml" />
     </modules>
