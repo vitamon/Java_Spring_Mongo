@@ -1,9 +1,4 @@
-.svn
-gen
-out
-.project
 target/
 *.ipr
 *.iws
-Desktop.ini
-workspace.xml
+.idea/
