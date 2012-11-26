@@ -1,4 +1,4 @@
-package in.ua.vitamon.model;
+package in.ua.vitamon.domain;
 
 import org.junit.Test;
 

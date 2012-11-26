@@ -16,7 +16,7 @@
           p:location="/WEB-INF/spring/spring.properties"/>
 
     <!-- MongoDB host -->
-    <mongo:mongo id="mongo" host="${mongo.host.name}" port="${mongo.host.port}"/>
+    <mongo:mongo id="mongo" host="${mongo.host.name}" port="${mongo.host.port}" write-concern="SAFE"/>
 
     <!-- Template for performing MongoDB operations -->
     <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">

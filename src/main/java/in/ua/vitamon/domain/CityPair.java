@@ -1,4 +1,4 @@
-package in.ua.vitamon.model;
+package in.ua.vitamon.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -12,14 +12,6 @@ public class CityPair {
     private String cityPair;
 
     private double distance;
-
-    @Override
-    public String toString() {
-        return "CityPair{" +
-                "cityPair='" + cityPair + '\'' +
-                ", distance=" + distance +
-                '}';
-    }
 
     /**
      * Parses and creates valid city pair object
@@ -56,7 +48,6 @@ public class CityPair {
 
     /**
      * Create a "City1::City2" key, where City1<=City2
-     *
      */
     public static String createKey(String fromCity, String toCity) {
         if (fromCity.compareTo(toCity) >= 0) {
@@ -90,4 +81,15 @@ public class CityPair {
     public void setCityPair(String cityPair) {
         this.cityPair = cityPair;
     }
+
+
+    @Override
+    public String toString() {
+        return "CityPair{" +
+                "cityPair='" + cityPair + '\'' +
+                ", distance=" + distance +
+                '}';
+    }
+
+
 }

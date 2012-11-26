@@ -1,8 +1,9 @@
 package in.ua.vitamon.web;
 
-import in.ua.vitamon.model.CityPair;
+import in.ua.vitamon.domain.CityPair;
 import in.ua.vitamon.services.IDistanceService;
-import org.apache.log4j.Logger;
+import in.ua.vitamon.helpers.Logger;
+import org.apache.commons.logging.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +21,8 @@ import java.io.UnsupportedEncodingException;
 public class AppController {
     private static final long serialVersionUID = 1L;
 
-    private static final Logger log = Logger.getLogger(AppController.class);
+    @Logger
+    private Log log;
 
     @Autowired
     private IDistanceService distanceService;
@@ -93,10 +95,10 @@ public class AppController {
         }
     }
 
-    private void getDistanceBetweenCities(HttpServletRequest request,
-                                          String fromCity,
-                                          String toCity,
-                                          HttpServletResponse response) {
+    protected void getDistanceBetweenCities(HttpServletRequest request,
+                                            String fromCity,
+                                            String toCity,
+                                            HttpServletResponse response) {
         if (!setRequestEncoding(request, response)) return;
 
         // parse data
@@ -110,7 +112,7 @@ public class AppController {
         // seek result
         CityPair result = null;
         try {
-            result = distanceService.lookup(data.getCityPair());
+            result = distanceService.findOne(data.getCityPair());
         } catch (Exception e) {
             log.error(e.getMessage());
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
